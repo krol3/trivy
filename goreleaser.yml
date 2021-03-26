@@ -84,8 +84,8 @@ brews:
 
 dockers:
   - image_templates:
-      - "docker.io/krol3/trivy:{{ .Version }}-amd64"
-      - "docker.io/krol3/trivy:latest-amd64"
+      - "docker.io/krol/trivy:{{ .Version }}-amd64"
+      - "docker.io/krol/trivy:latest-amd64"
     use_buildx: true
     goos: linux
     goarch: amd64
@@ -104,8 +104,8 @@ dockers:
     extra_files:
     - contrib/
   - image_templates:
-      - "docker.io/krol3/trivy:{{ .Version }}-arm64"
-      - "docker.io/krol3/trivy:latest-arm64"
+      - "docker.io/krol/trivy:{{ .Version }}-arm64"
+      - "docker.io/krol/trivy:latest-arm64"
     use_buildx: true
     goos: linux
     goarch: arm64
