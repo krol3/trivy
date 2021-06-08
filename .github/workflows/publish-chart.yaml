@@ -38,10 +38,11 @@ jobs:
         run: |
           if [ "$RELEASE" = '' ]
           then
-            RELEASE=${{ github.head_ref }}
+            RELEASE=$(echo ${{ github.ref }} | sed -e "s#refs/tags/##g" | sed -e 's/^v//')
+            echo "VERSION=${GITHUB_REF/refs\/tags\/v/}"
           fi
           echo "Release '${RELEASE}'"
-          helm package --app-version=${RELEASE} ${{ env.CHART_DIR }} -d .cr-release-packages
+          helm package --app-version=${RELEASE} --version=${RELEASE} ${{ env.CHART_DIR }} -d .cr-release-packages
       - name: Upload helm chart
         # Failed with upload the same version: https://github.com/helm/chart-releaser/issues/101
         continue-on-error: true
