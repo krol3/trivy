@@ -41,7 +41,7 @@ jobs:
             RELEASE=${{ github.head_ref }}
           fi
           echo "Release '${RELEASE}'"
-          helm package --app-version=${RELEASE} ${{ env.CHART_DIR }} -d .cr-release-packages
+          helm package --app-version=${RELEASE} --version=${RELEASE} ${{ env.CHART_DIR }} -d .cr-release-packages
       - name: Upload helm chart
         # Failed with upload the same version: https://github.com/helm/chart-releaser/issues/101
         continue-on-error: true
