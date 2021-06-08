@@ -33,15 +33,10 @@ jobs:
           wget "https://github.com/helm/chart-releaser/releases/download/v${VERSION}/chart-releaser_${VERSION}_linux_amd64.tar.gz"
           tar xzvf chart-releaser_${VERSION}_linux_amd64.tar.gz cr          
       - name: Package helm chart
-        env:
-          RELEASE: ${{ github.event.inputs.version }}
         run: |
-          if [ "$RELEASE" = '' ]
-          then
-            RELEASE=${{ github.head_ref }}
-          fi
-          echo "Release '${RELEASE}'"
-          helm package --app-version=${RELEASE} ${{ env.CHART_DIR }} -d .cr-release-packages
+          RELEASE=$(echo ${{ github.ref }} | sed -e "s#refs/tags/##g" | sed -e 's/^v//')
+          echo "Release: ${RELEASE}"
+          helm package --app-version=${RELEASE} --version=${RELEASE} ${{ env.CHART_DIR }} -d .cr-release-packages
       - name: Upload helm chart
         # Failed with upload the same version: https://github.com/helm/chart-releaser/issues/101
         continue-on-error: true
