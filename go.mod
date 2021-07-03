@@ -3,17 +3,17 @@ module github.com/aquasecurity/trivy
 go 1.16
 
 require (
-	github.com/Masterminds/goutils v1.1.0 // indirect
+	github.com/Masterminds/goutils v1.1.1 // indirect
 	github.com/Masterminds/sprig v2.22.0+incompatible
 	github.com/NYTimes/gziphandler v0.0.0-20170623195520-56545f4a5d46
 	github.com/aquasecurity/bolt-fixtures v0.0.0-20200903104109-d34e7f983986
-	github.com/aquasecurity/fanal v0.0.0-20210520034323-54c5a82e861f
+	github.com/aquasecurity/fanal v0.0.0-20210628083154-9556a040f4ad
 	github.com/aquasecurity/go-dep-parser v0.0.0-20210520015931-0dd56983cc62
 	github.com/aquasecurity/go-gem-version v0.0.0-20201115065557-8eed6fe000ce
 	github.com/aquasecurity/go-npm-version v0.0.0-20201110091526-0b796d180798
 	github.com/aquasecurity/go-pep440-version v0.0.0-20210121094942-22b2f8951d46
 	github.com/aquasecurity/go-version v0.0.0-20210121072130-637058cfe492
-	github.com/aquasecurity/trivy-db v0.0.0-20210429114658-ae22941a55d0
+	github.com/aquasecurity/trivy-db v0.0.0-20210531102723-aaab62dec6ee
 	github.com/caarlos0/env/v6 v6.0.0
 	github.com/cenkalti/backoff v2.2.1+incompatible
 	github.com/cheggaaa/pb/v3 v3.0.3
