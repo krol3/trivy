@@ -85,7 +85,7 @@ trivy:
   cache:
     redis:
       enabled: false
-      url: "" # e.g. redis://redis.redis.svc:6379
+      url: ""  # e.g. redis://redis.redis.svc:6379
 
 service:
   # type Kubernetes service type
