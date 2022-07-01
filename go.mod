@@ -13,7 +13,7 @@ require (
 	github.com/aquasecurity/go-npm-version v0.0.0-20201110091526-0b796d180798
 	github.com/aquasecurity/go-pep440-version v0.0.0-20210121094942-22b2f8951d46
 	github.com/aquasecurity/go-version v0.0.0-20210121072130-637058cfe492
-	github.com/aquasecurity/table v1.5.1
+	github.com/aquasecurity/table v1.6.0
 	github.com/aquasecurity/testdocker v0.0.0-20210911155206-e1e85f5a1516
 	github.com/aquasecurity/trivy-db v0.0.0-20220602091213-39d8a6798e07
 	github.com/aquasecurity/trivy-kubernetes v0.3.1-0.20220613131930-79b2cb425b18
