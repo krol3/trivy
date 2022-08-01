@@ -49,7 +49,7 @@ require (
 	github.com/sosedoff/gitkit v0.3.0
 	github.com/spf13/cobra v1.5.0
 	github.com/spf13/pflag v1.0.5
-	github.com/spf13/viper v1.8.1
+	github.com/spf13/viper v1.12.0
 	github.com/stretchr/testify v1.8.0
 	github.com/testcontainers/testcontainers-go v0.13.0
 	github.com/tetratelabs/wazero v0.0.0-20220701105919-891761ac1ee2
@@ -64,7 +64,10 @@ require (
 	k8s.io/utils v0.0.0-20220210201930-3a6ce19ff2f9
 )
 
-require github.com/emicklei/go-restful/v3 v3.8.0 // indirect
+require (
+	github.com/emicklei/go-restful/v3 v3.8.0 // indirect
+	github.com/pelletier/go-toml/v2 v2.0.1 // indirect
+)
 
 require (
 	cloud.google.com/go v0.100.2 // indirect
