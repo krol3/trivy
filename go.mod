@@ -3,7 +3,7 @@ module github.com/aquasecurity/trivy
 go 1.18
 
 require (
-	github.com/CycloneDX/cyclonedx-go v0.6.0
+	github.com/CycloneDX/cyclonedx-go v0.7.1
 	github.com/Masterminds/sprig/v3 v3.2.2
 	github.com/NYTimes/gziphandler v1.1.1
 	github.com/alicebob/miniredis/v2 v2.23.0
@@ -56,7 +56,7 @@ require (
 	github.com/spf13/cobra v1.5.0
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.12.0
-	github.com/stretchr/testify v1.8.0
+	github.com/stretchr/testify v1.8.2
 	github.com/testcontainers/testcontainers-go v0.13.0
 	github.com/tetratelabs/wazero v1.0.0-pre.1
 	github.com/twitchtv/twirp v8.1.2+incompatible
@@ -305,7 +305,7 @@ require (
 	github.com/spf13/afero v1.8.2 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
-	github.com/stretchr/objx v0.4.0 // indirect
+	github.com/stretchr/objx v0.5.0 // indirect
 	github.com/subosito/gotenv v1.4.0 // indirect
 	github.com/ulikunitz/xz v0.5.8 // indirect
 	github.com/vbatts/tar-split v0.11.2 // indirect
