@@ -1,6 +1,6 @@
 module github.com/aquasecurity/trivy
 
-go 1.18
+go 1.23
 
 require (
 	github.com/CycloneDX/cyclonedx-go v0.6.0
@@ -65,7 +65,7 @@ require (
 	go.uber.org/zap v1.22.0
 	golang.org/x/exp v0.0.0-20220407100705-7b9b53b0aca4
 	golang.org/x/xerrors v0.0.0-20220609144429-65e65417b02f
-	google.golang.org/protobuf v1.28.1
+	google.golang.org/protobuf v1.36.8
 	gopkg.in/yaml.v3 v3.0.1
 	k8s.io/utils v0.0.0-20220210201930-3a6ce19ff2f9
 )
