@@ -1,6 +1,6 @@
 module github.com/aquasecurity/trivy
 
-go 1.18
+go 1.24.0
 
 require (
 	github.com/CycloneDX/cyclonedx-go v0.6.0
@@ -327,8 +327,8 @@ require (
 	golang.org/x/net v0.0.0-20220624214902-1bab6f366d9e // indirect
 	golang.org/x/oauth2 v0.0.0-20220411215720-9780585627b5 // indirect
 	golang.org/x/sync v0.0.0-20220601150217-0de741cfad7f
-	golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect
-	golang.org/x/term v0.0.0-20220526004731-065cf7ba2467
+	golang.org/x/sys v0.40.0 // indirect
+	golang.org/x/term v0.39.0
 	golang.org/x/text v0.3.7
 	golang.org/x/time v0.0.0-20220609170525-579cf78fd858 // indirect
 	golang.org/x/tools v0.1.10 // indirect
